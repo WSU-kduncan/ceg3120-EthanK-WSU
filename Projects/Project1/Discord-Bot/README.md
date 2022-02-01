@@ -1,0 +1,19 @@
+- Setup
+  - Get an API token by using the developer portal for Discord
+    - Create an application
+    - Turn the application into a bot
+    - Copy the token from the interface
+  - Put the token in a file called .env, which should be ignored by github, under a variable called 'DISCORD_TOKEN'.
+  - discord.py and python-dotenv need to be installed for the code to function
+    - `pip3 install -U discord.py` for the discord library
+    - `pip3 install -U python-dotenv` for the .env file to be recognized
+- Usage
+  - Command: `Hack the planet!`
+    - Output: A random quote from a short list, taken from the terrible but hilariously-aged 1995 movie 'Hackers'.
+  - Command: `!gifme`
+    - Output: A random gif from a short selection of internet-uploaded files on public hosts.
+    - Note: This should be changed to be hosted somewhere more reliable but will work for this class, using Discord's automatic embed of the specific sources used. (imgur, twitter, gfycat)
+- Research
+  - External hosting platforms can be used to host things that always need to be online
+  - These can be specific to discord bots with less management and maintenance but less precise control and more cost
+  - These can also just be platforms just like AWS that run 24/7 instead of for 6 hours and the bot is run like it is now with controls accessed remotely.
